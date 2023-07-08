@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sims4 web page</title>
+    <style>
+      body {
+        background: rgb(74, 205, 91);
+        background: linear-gradient(
+          0deg,
+          rgba(74, 205, 91, 1) 0%,
+          rgba(241, 246, 241, 1) 100%
+        );
+      }
+      button {
+        display: block;
+        margin: 15px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        background: rgb(185, 230, 218);
+        background: radial-gradient(
+          circle,
+          rgba(185, 230, 218, 1) 20%,
+          rgba(11, 181, 139, 0.4054054054054054) 73%,
+          rgba(0, 123, 140, 0.6643907563025211) 100%
+        );
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: none;
+        padding: 10px 30px 10px;
+        text-align: center;
+        -webkit-box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+        box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+      }
+      .clasic {
+        background: rgb(11, 181, 139);
+        background: linear-gradient(
+          90deg,
+          rgba(11, 181, 139, 0.7316176470588236) 0%,
+          rgba(185, 230, 218, 1) 50%,
+          rgba(0, 123, 140, 0.6643907563025211) 100%
+        );
+      }
+
+      .play.clicked {
+        background: #fff;
+        -webkit-box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+        box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 10px 30px 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .content {
+        max-width: 600px;
+        padding: 20px;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.756);
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        max-width: 100%;
+      }
+      .expansion-packs {
+        transition: all 150ms ease-in-out;
+        max-width: 100%;
+      }
+      .expansion-packs:hover {
+        filter: contrast(50%);
+        transform: scale(1.1);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin: 15px;
+      }
+      .grid img {
+        width: 300px;
+        height: 150px;
+      }
+      p {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+      }
+      .play {
+        display: block;
+        text-align: center;
+        margin: auto;
+      }
+      #playButton {
+        -webkit-box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+        box-shadow: inset 0px -19px 24px -15px rgba(0, 0, 0, 0.16);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 10px 30px 10px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      footer {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: smaller;
+        text-align: center;
+        padding-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="Theme" onclick="clasic()">Classic Sims background</button>
+
+    <div class="content">
+      <h1>Sims 4 is Life</h1>
+      <h2>The best time you ever waisted</h2>
+      <a
+        href="https://www.ea.com/en/games/the-sims/the-sims-4/store/categories/expansion-packs"
+        target="_blank"
+      >
+        <img
+          src="https://i.ebayimg.com/images/g/EoAAAOSwEWZdF~E7/s-l1600.jpg"
+          alt=" expansion packs"
+          class="expansion-packs"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://www.nme.com/wp-content/uploads/2022/09/The-Sims-4-free-2000x1270-1.jpg"
+          alt=" sims sing"
+        />
+        <img
+          src="https://whatifgaming.com/wp-content/uploads/2022/12/Untitled-design-1-1-1024x576.png"
+          alt="Build mode"
+        />
+        <img
+          src="https://store-images.s-microsoft.com/image/apps.53573.14581361241054612.a3e88367-5b0e-4110-b775-d0ce2542d25d.be7c6041-c986-4db5-a72a-c15b4b20b8c9?q=90&w=480&h=270"
+          alt="Sims 4 wolfpack"
+        />
+        <img
+          src="https://playsense.nl/wp-content/uploads/2022/09/Sims-4-yo.jpg"
+          alt=" sims"
+        />
+      </div>
+
+      <p>
+        The Sims 4 is a super cool game where you can create your own characters
+        called "Sims", build houses for them, and watch them live their lives.
+        It's the fourth installment in The Sims series and is even better than
+        the previous games! You can get the game on Windows, OS X, PlayStation
+        4, and Xbox One. And the best part? It's now free-to-play, with tons of
+        fun downloadable content packs available for purchase. With improved
+        character creation and housebuilding tools, as well as new emotion and
+        personality systems for Sims, this game is sure to keep you entertained
+        for hours.So get ready to let your creativity run wild and have a blast
+        with The Sims 4!
+      </p>
+      <span class="play">
+        <input
+          id="playButton"
+          type="button"
+          onclick="location.href='https://www.ea.com/games/the-sims/the-sims-4';"
+          value="Play here"
+      /></span>
+
+      <footer>Coded by Rusanne</footer>
+    </div>
+
+    <script>
+      function clasic() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("clasic")) {
+          body.classList.remove("clasic");
+        } else {
+          body.classList.add("clasic");
+        }
+      }
+
+      let theme = document.querySelector("button");
+      theme.classList.add("clicked");
+    </script>
+  </body>
+</html>
